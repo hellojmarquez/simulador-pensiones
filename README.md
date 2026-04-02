@@ -1,59 +1,59 @@
-# 📊 Simulador de Pensiones: Reforma Previsional 2026
+# 📊 Pension Simulator: Chile's 2026 Pension Reform
 
 [![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://simulador-pensiones-phi.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js_14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-Una herramienta interactiva diseñada para que los ciudadanos chilenos puedan visualizar y comparar cómo impactaría la propuesta de reforma de pensiones en su jubilación futura.
+An interactive tool designed for Chilean citizens to visualize and compare how the proposed pension reform would impact their future retirement.
 
-🚀 **Accede al simulador aquí:** [https://simulador-pensiones-phi.vercel.app/](https://simulador-pensiones-phi.vercel.app/)
+🚀 **Access the simulator here:** [https://simulador-pensiones-phi.vercel.app/](https://simulador-pensiones-phi.vercel.app/)
 
 ---
 
-## ✨ Características Principales
+## ✨ Key Features
 
-- **Simulación en Tiempo Real**: Ajusta tu edad, sueldo y años de cotización con sliders interactivos y ve los cambios al instante.
-- **Comparativa de Sistemas**: Visualiza la diferencia entre la **Capitalización Individual** actual y la propuesta con **Seguro Social**.
-- **Infografía Dinámica**: Gráficos integrales generados con Chart.js para un análisis visual claro.
-- **Privacidad Local**: Los datos sensibles no se almacenan permanentemente en el navegador.
+- **Real-Time Simulation**: Adjust your age, income, and contribution years with interactive sliders and see instant results.
+- **System Comparison**: Visualize the difference between the current **Individual Capitalization** and the proposed **Social Security** system.
+- **Dynamic Infographics**: Comprehensive charts generated via Chart.js for clear visual analysis.
+- **Local Privacy**: Sensitive user input is not stored permanently in the browser.
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Technology Stack
 
 - **Frontend**: Next.js 14, React, Tailwind CSS, Framer Motion.
-- **Gráficos**: Chart.js.
+- **Charts**: Chart.js.
 - **Backend API**: Next.js Server Actions & API Routes.
-- **Integraciones**: Google Apps Script (Webhooks para registro de opiniones).
+- **Integrations**: Google Apps Script (Webhooks for feedback and opinion logging).
 
 ---
 
-## 🔒 Aviso de Seguridad y Propiedad Intelectual
+## 🔒 Security & Intellectual Property Notice
 
 > [!IMPORTANT]
-> **Este repositorio NO contiene el código fuente de las fórmulas de cálculo previsional.**
+> **This repository does NOT contain the calculation logic source code.**
 
-Por motivos de seguridad y confidencialidad de la lógica actuarial, los archivos de cálculo (`src/app/api/calculate/route.ts`) están excluidos de este repositorio público mediante `.gitignore`. 
+Due to security and confidentiality requirements for actuarial logic, the calculation files (`src/app/api/calculate/route.ts`) are excluded from this public repository via `.gitignore`. 
 
-La implementación en producción utiliza el **Vercel CLI** para inyectar estos componentes privados directamente desde el entorno de desarrollo seguro a los servidores de Vercel, garantizando que las fórmulas proprietarias permanezcan ocultas al público mientras la herramienta sigue siendo funcional para los usuarios.
+The production deployment utilizes the **Vercel CLI** to inject these private components directly from the secure local development environment to Vercel's servers. This ensures that proprietary formulas remain hidden from the public while the tool remains fully functional for users.
 
 ---
 
-## 🚀 Instalación y Desarrollo Local
+## 🚀 Installation & Local Development
 
-Si deseas clonar el proyecto para trabajar en la interfaz:
+To clone the project and work on the UI/UX:
 
-1. Clona el repo:
+1. Clone the repo:
    ```bash
    git clone https://github.com/hellojmarquez/simulador-pensiones.git
    ```
-2. Instala dependencias:
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. Ejecuta el servidor:
+3. Run the development server:
    ```bash
    npm run dev
    ```
 
 ---
 
-*Desarrollado con ❤️ para empoderar la información ciudadana.*
+*Developed with ❤️ to empower citizen information.*
