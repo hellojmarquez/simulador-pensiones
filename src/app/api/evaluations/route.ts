@@ -9,8 +9,7 @@ export async function POST(request: Request) {
   const body = await request.json();
   body.id = uuidv4();
 
-  const urlGoogleSheet =
-    'https://script.google.com/macros/s/AKfycbzqIzAMd-DpvjPajVfMtbN9umCVIrL94Qv2h9KHddQAOxCrOWOISBCyoWqmvLK8Fg7a/exec';
+  const urlGoogleSheet = process.env.GOOGLE_EVALUATIONS_SCRIPT_URL || '';
 
   try {
     const response = await fetch(`${urlGoogleSheet}?endpoint=evaluacion`, {

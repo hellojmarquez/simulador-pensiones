@@ -8,8 +8,7 @@ export async function POST(request: Request) {
   console.log(body);
   body.ID = uuidv4();
 
-  const urlGoogleSheet =
-    'https://script.google.com/macros/s/AKfycbx5-e2YMPZT3RZCdqj2Clybf_ncHjLCWDFWoqMwGV5mPniBWEmd9aj5gCr4jSYv8_M2/exec';
+  const urlGoogleSheet = process.env.GOOGLE_APPS_SCRIPT_URL || '';
 
   try {
     const response = await fetch(`${urlGoogleSheet}?endpoint=simulacion`, {

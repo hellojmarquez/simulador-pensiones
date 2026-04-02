@@ -1,40 +1,59 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Simulador de Pensiones: Reforma Previsional 2026
 
-## Getting Started
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://simulador-pensiones-phi.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js_14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-First, run the development server:
+Una herramienta interactiva diseñada para que los ciudadanos chilenos puedan visualizar y comparar cómo impactaría la propuesta de reforma de pensiones en su jubilación futura.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 **Accede al simulador aquí:** [https://simulador-pensiones-phi.vercel.app/](https://simulador-pensiones-phi.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Características Principales
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Simulación en Tiempo Real**: Ajusta tu edad, sueldo y años de cotización con sliders interactivos y ve los cambios al instante.
+- **Comparativa de Sistemas**: Visualiza la diferencia entre la **Capitalización Individual** actual y la propuesta con **Seguro Social**.
+- **Infografía Dinámica**: Gráficos integrales generados con Chart.js para un análisis visual claro.
+- **Privacidad Local**: Los datos sensibles no se almacenan permanentemente en el navegador.
 
-## Learn More
+## 🛠️ Stack Tecnológico
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js 14, React, Tailwind CSS, Framer Motion.
+- **Gráficos**: Chart.js.
+- **Backend API**: Next.js Server Actions & API Routes.
+- **Integraciones**: Google Apps Script (Webhooks para registro de opiniones).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🔒 Aviso de Seguridad y Propiedad Intelectual
 
-## Deploy on Vercel
+> [!IMPORTANT]
+> **Este repositorio NO contiene el código fuente de las fórmulas de cálculo previsional.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Por motivos de seguridad y confidencialidad de la lógica actuarial, los archivos de cálculo (`src/app/api/calculate/route.ts`) están excluidos de este repositorio público mediante `.gitignore`. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# simulador-pensiones
->>>>>>> 38027ad49b483ea0ebacfaee667183981549ab67
+La implementación en producción utiliza el **Vercel CLI** para inyectar estos componentes privados directamente desde el entorno de desarrollo seguro a los servidores de Vercel, garantizando que las fórmulas proprietarias permanezcan ocultas al público mientras la herramienta sigue siendo funcional para los usuarios.
+
+---
+
+## 🚀 Instalación y Desarrollo Local
+
+Si deseas clonar el proyecto para trabajar en la interfaz:
+
+1. Clona el repo:
+   ```bash
+   git clone https://github.com/hellojmarquez/simulador-pensiones.git
+   ```
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+3. Ejecuta el servidor:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+*Desarrollado con ❤️ para empoderar la información ciudadana.*
